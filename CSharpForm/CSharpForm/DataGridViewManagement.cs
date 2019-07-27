@@ -39,6 +39,7 @@ namespace CSharpForm
             {
                 dataTable.Rows.Add(csvData[i]);
             }
+            //データグリッドビューと紐づけ
             DataGridView.DataSource = dataTable;
         }
     }
