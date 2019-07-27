@@ -23,7 +23,7 @@ namespace CSharpForm
             DataGridViewManagement DGVMng = new DataGridViewManagement(dataGridView1);
 
             //csvファイルの読み込み
-            string path = "";
+            string path = "csvTest.csv";
             string[][] csvData = CsvReader.Read(path);
             //データグリッドビューに表示
             DGVMng.Disp(csvData);
