@@ -31,7 +31,7 @@ namespace CSharpForm
             }
 
             dataSet.Tables.Add(dataTable);
-            dataGridView.DataSource = dataSet;
+            dataGridView.DataSource = dataSet.Tables[0];
         }
     }
 }
