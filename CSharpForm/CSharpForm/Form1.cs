@@ -26,7 +26,7 @@ namespace CSharpForm
 
             ReadData = CsvReader.Read(FilePath);
 
-            DGVMng.DataGridViewDisp(ReadData, dataGridView1);
+            DGVMng.Disp(ReadData, dataGridView1);
 
             dataGridView1.Refresh();
         }

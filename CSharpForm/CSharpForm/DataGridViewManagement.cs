@@ -12,11 +12,10 @@ namespace CSharpForm
 {
     class DataGridViewManagement
     {
-        public void DataGridViewDisp(string[][] ReadData, DataGridView dataGridView)
+        public void Disp(string[][] ReadData, DataGridView dataGridView)
         {
             DataSet dataSet = new DataSet();
-
-            DataTable dataTable = new DataTable();
+            DataTable dataTable = new DataTable("Data");
 
             // 1行目をヘッダーとして読み込む
             for(int i = 0; i < ReadData[0].Length; i++)
@@ -32,7 +31,6 @@ namespace CSharpForm
             }
 
             dataSet.Tables.Add(dataTable);
-
             dataGridView.DataSource = dataSet;
         }
     }
