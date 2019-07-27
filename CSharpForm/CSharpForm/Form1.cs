@@ -21,8 +21,14 @@ namespace CSharpForm
         private void button_Disp_Click(object sender, EventArgs e)
         {
             DataGridViewManagement DGVMng = new DataGridViewManagement();
-            
+            string FilePath = @"data\dummydata.csv";
+            string[][] ReadData;
 
+            ReadData = CsvReader.Read(FilePath);
+
+            DGVMng.DataGridViewDisp(ReadData, dataGridView1);
+
+            dataGridView1.Refresh();
         }
     }
 }
